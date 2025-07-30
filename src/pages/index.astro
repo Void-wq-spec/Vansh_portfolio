@@ -1,0 +1,608 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Vansh Kanotra - Full Stack Developer">
+	<button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+		<svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M12 3V5M12 19V21M5.64645 5.64645L7.05066 7.05066M16.9493 16.9493L18.3536 18.3536M3 12H5M19 12H21M5.64645 18.3536L7.05066 16.9493M16.9493 7.05066L18.3536 5.64645M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+		<svg class="moon-icon hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" fill="currentColor"/>
+		</svg>
+	</button>
+
+	<main class="container py-12">
+		<!-- Hero Section -->
+		<section class="text-center mb-12">
+			<div class="bitmoji-avatar mx-auto">
+				<!-- Person working on laptop -->
+				<div class="person">
+					<!-- Head -->
+					<div class="head">
+						<div class="hair"></div>
+						<div class="face">
+							<div class="eyes">
+								<div class="eye left"></div>
+								<div class="eye right"></div>
+							</div>
+							<div class="nose"></div>
+							<div class="mouth"></div>
+						</div>
+					</div>
+					<!-- Body -->
+					<div class="body">
+						<div class="shirt"></div>
+						<div class="arms">
+							<div class="arm left"></div>
+							<div class="arm right"></div>
+						</div>
+					</div>
+				</div>
+				<!-- Laptop -->
+				<div class="laptop">
+					<div class="laptop-screen">
+						<div class="screen-content">
+							<div class="code-line"></div>
+							<div class="code-line short"></div>
+							<div class="code-line"></div>
+						</div>
+					</div>
+					<div class="laptop-base">
+						<div class="keyboard"></div>
+						<div class="trackpad"></div>
+					</div>
+				</div>
+				<!-- Floating elements -->
+				<div class="floating-elements">
+					<div class="code-symbol">{ }</div>
+					<div class="code-symbol bracket">&lt;/&gt;</div>
+					<div class="code-symbol function">fn()</div>
+				</div>
+			</div>
+			<h1 class="text-4xl font-bold mb-4">
+				Hi, I'm <span style="color: var(--color-primary);">Vansh Kanotra</span>, a passionate developer
+			</h1>
+			<p class="text-xl text-secondary mb-6" style="color: var(--color-text-secondary);">
+				An ambitious BTech student from Manipal University Jaipur with expertise in full-stack development, mobile app development, and emerging technologies. I specialize in building scalable applications using modern frameworks and have experience as a side hustler and freelancer. Always ready to take on new challenges and deliver innovative solutions.
+			</p>
+			<div class="status-indicator mx-auto mb-8">
+				<div class="status-dot"></div>
+				Available for Work - Delhi Timezone (IST)
+			</div>
+		</section>
+
+		<!-- Main Grid -->
+		<div class="grid grid-cols-1 lg:grid-cols-3 mb-12">
+			<!-- Tech Stack -->
+			<div class="lg:col-span-2">
+				<div class="card">
+					<h2 class="text-2xl font-bold mb-6">Tech Stack</h2>
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+						<div class="tech-item">
+							<div class="tech-icon" style="color: #f7c52d;">JS</div>
+							<span class="font-medium">JavaScript</span>
+						</div>
+						<div class="tech-item">
+							<div class="tech-icon" style="color: #3776ab;">🐍</div>
+							<span class="font-medium">Python</span>
+						</div>
+						<div class="tech-item">
+							<div class="tech-icon" style="color: #61dafb;">⚛️</div>
+							<span class="font-medium">React</span>
+						</div>
+						<div class="tech-item">
+							<div class="tech-icon" style="color: #00599c;">C</div>
+							<span class="font-medium">C/C++</span>
+						</div>
+						<div class="tech-item">
+							<div class="tech-icon" style="color: #ff6b35;">🚀</div>
+							<span class="font-medium">Astro</span>
+						</div>
+						<div class="tech-item">
+							<div class="tech-icon" style="color: #02569b;">📱</div>
+							<span class="font-medium">Flutter</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Status Card -->
+			<div class="card">
+				<h2 class="text-xl font-bold mb-4">Status</h2>
+				<div class="status-indicator mb-4">
+					<div class="status-dot"></div>
+					Available for Work
+				</div>
+				<p class="text-sm" style="color: var(--color-text-secondary);">
+					Currently open for freelance opportunities and exciting projects!
+				</p>
+			</div>
+		</div>
+
+		<!-- Quote Section -->
+		<div class="mb-12">
+			<div class="card quote-card text-center">
+				<blockquote class="text-2xl font-semibold mb-4">
+					"Dream big. Start small. Persist."
+				</blockquote>
+				<cite class="text-lg opacity-90">- Vansh Kanotra</cite>
+			</div>
+		</div>
+
+		<!-- Experience and Contact Grid -->
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+			<!-- Experience -->
+			<div class="card">
+				<h2 class="text-2xl font-bold mb-6">Experience</h2>
+				<div class="border-l-4 pl-4" style="border-color: var(--color-primary);">
+					<h3 class="font-semibold text-lg">Side Hustler & Freelancer</h3>
+					<p class="text-sm mb-2" style="color: var(--color-primary);">Independent</p>
+					<p class="text-sm mb-4" style="color: var(--color-text-secondary);">2022 - Present</p>
+					<p class="text-sm" style="color: var(--color-text-secondary);">
+						Building innovative solutions, working on diverse projects, and helping businesses grow through technology. Ready to take on new challenges and collaborate on exciting ventures.
+					</p>
+				</div>
+			</div>
+
+			<!-- Contact -->
+			<div class="card">
+				<h2 class="text-2xl font-bold mb-6">Let's Connect</h2>
+				<div class="space-y-4">
+					<a 
+						href="https://github.com/Void-wq-spec" 
+						target="_blank" 
+						rel="noopener noreferrer" 
+						class="btn btn-outline w-full"
+					>
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+						</svg>
+						GitHub
+					</a>
+					<a 
+						href="https://www.linkedin.com/in/vansh-kanotra-914312341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+						target="_blank" 
+						rel="noopener noreferrer" 
+						class="btn btn-secondary w-full"
+					>
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+						</svg>
+						LinkedIn
+					</a>
+					<a 
+						href="mailto:vanshkt10@gmail.com" 
+						class="btn btn-primary w-full"
+					>
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M24 5.457v13.086c0 .904-.732 1.636-1.636 1.636h-20.728c-.904 0-1.636-.732-1.636-1.636v-13.086c0-.904.732-1.636 1.636-1.636h20.728c.904 0 1.636.732 1.636 1.636zm-1.636-1.636h-20.728l10.364 6.618 10.364-6.618zm0 2.045l-10.364 6.618-10.364-6.618v11.045h20.728v-11.045z"/>
+						</svg>
+						vanshkt10@gmail.com
+					</a>
+					<a 
+						href="tel:+918377043309" 
+						class="btn btn-outline w-full"
+					>
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+						</svg>
+						+91 8377043309
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Education Section -->
+		<div class="mt-12">
+			<div class="card">
+				<h2 class="text-2xl font-bold mb-6">Education</h2>
+				<div class="border-l-4 pl-4" style="border-color: var(--color-secondary);">
+					<h3 class="font-semibold text-lg">Bachelor of Technology (BTech)</h3>
+					<p class="text-sm mb-2" style="color: var(--color-secondary);">Manipal University Jaipur</p>
+					<p class="text-sm" style="color: var(--color-text-secondary);">
+						Currently pursuing BTech with a focus on computer science and technology. Gaining expertise in software development, algorithms, and modern programming practices.
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script>
+		// Theme toggle icon switching
+		const themeToggle = document.getElementById('theme-toggle');
+		const sunIcon = themeToggle?.querySelector('.sun-icon');
+		const moonIcon = themeToggle?.querySelector('.moon-icon');
+
+		function updateThemeIcon() {
+			const isDark = document.documentElement.classList.contains('dark');
+			if (sunIcon && moonIcon) {
+				if (isDark) {
+					sunIcon.classList.add('hidden');
+					moonIcon.classList.remove('hidden');
+				} else {
+					sunIcon.classList.remove('hidden');
+					moonIcon.classList.add('hidden');
+				}
+			}
+		}
+
+		// Initial icon update
+		updateThemeIcon();
+
+		// Update icon on theme change
+		themeToggle?.addEventListener('click', () => {
+			setTimeout(updateThemeIcon, 100);
+		});
+
+		// Add some interactive animations
+		const techItems = document.querySelectorAll('.tech-item');
+		techItems.forEach((item, index) => {
+			item.style.animationDelay = `${index * 0.1}s`;
+			item.classList.add('animate-fade-in');
+		});
+
+		// Contact button click tracking
+		const contactButtons = document.querySelectorAll('a[href^="mailto:"], a[href^="tel:"], a[href*="github.com"], a[href*="linkedin.com"]');
+		contactButtons.forEach(button => {
+			button.addEventListener('click', (e) => {
+				// Add click animation
+				button.style.transform = 'scale(0.95)';
+				setTimeout(() => {
+					button.style.transform = '';
+				}, 150);
+			});
+		});
+	</script>
+
+	<style>
+		.w-full {
+			width: 100%;
+		}
+
+		.space-y-4 > * + * {
+			margin-top: 1rem;
+		}
+
+		.mx-auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.hidden {
+			display: none;
+		}
+
+		/* Bitmoji Avatar Styles */
+		.bitmoji-avatar {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			margin-bottom: 2rem;
+			animation: float 3s ease-in-out infinite;
+		}
+
+		/* Person */
+		.person {
+			position: absolute;
+			top: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 2;
+		}
+
+		/* Head */
+		.head {
+			position: relative;
+			width: 50px;
+			height: 50px;
+		}
+
+		.hair {
+			position: absolute;
+			top: -5px;
+			left: 5px;
+			width: 40px;
+			height: 25px;
+			background: #2d1810;
+			border-radius: 20px 20px 5px 5px;
+			z-index: 1;
+		}
+
+		.face {
+			position: relative;
+			width: 40px;
+			height: 40px;
+			background: #fdbcb4;
+			border-radius: 50%;
+			margin: 5px;
+			z-index: 2;
+		}
+
+		.eyes {
+			position: absolute;
+			top: 12px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 8px;
+		}
+
+		.eye {
+			width: 4px;
+			height: 4px;
+			background: #333;
+			border-radius: 50%;
+		}
+
+		.nose {
+			position: absolute;
+			top: 18px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 2px;
+			height: 2px;
+			background: #e8a598;
+			border-radius: 50%;
+		}
+
+		.mouth {
+			position: absolute;
+			top: 22px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 8px;
+			height: 4px;
+			border: 1px solid #333;
+			border-top: none;
+			border-radius: 0 0 8px 8px;
+		}
+
+		/* Body */
+		.body {
+			position: relative;
+			margin-top: 5px;
+		}
+
+		.shirt {
+			width: 35px;
+			height: 30px;
+			background: var(--color-primary);
+			border-radius: 8px 8px 0 0;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		.arms {
+			position: absolute;
+			top: 5px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 60px;
+			height: 20px;
+		}
+
+		.arm {
+			position: absolute;
+			width: 15px;
+			height: 25px;
+			background: #fdbcb4;
+			border-radius: 8px;
+		}
+
+		.arm.left {
+			left: -5px;
+			transform: rotate(-20deg);
+			animation: typing 2s ease-in-out infinite;
+		}
+
+		.arm.right {
+			right: -5px;
+			transform: rotate(20deg);
+			animation: typing 2s ease-in-out infinite 0.5s;
+		}
+
+		/* Laptop */
+		.laptop {
+			position: absolute;
+			bottom: 30px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 1;
+		}
+
+		.laptop-screen {
+			width: 80px;
+			height: 50px;
+			background: #1a1a1a;
+			border: 3px solid #333;
+			border-radius: 5px 5px 0 0;
+			position: relative;
+			transform: perspective(100px) rotateX(-10deg);
+		}
+
+		.screen-content {
+			padding: 8px;
+			height: 100%;
+		}
+
+		.code-line {
+			height: 2px;
+			background: var(--color-primary);
+			margin-bottom: 3px;
+			border-radius: 1px;
+			animation: codeGlow 2s ease-in-out infinite;
+		}
+
+		.code-line.short {
+			width: 60%;
+		}
+
+		.laptop-base {
+			width: 85px;
+			height: 8px;
+			background: #666;
+			border-radius: 0 0 8px 8px;
+			position: relative;
+			margin-top: -2px;
+		}
+
+		.keyboard {
+			position: absolute;
+			top: 1px;
+			left: 8px;
+			right: 8px;
+			height: 4px;
+			background: #333;
+			border-radius: 2px;
+		}
+
+		.trackpad {
+			position: absolute;
+			bottom: 1px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 15px;
+			height: 3px;
+			background: #444;
+			border-radius: 2px;
+		}
+
+		/* Floating Elements */
+		.floating-elements {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			pointer-events: none;
+		}
+
+		.code-symbol {
+			position: absolute;
+			font-family: 'Courier New', monospace;
+			font-weight: bold;
+			color: var(--color-primary);
+			font-size: 14px;
+			animation: float 4s ease-in-out infinite;
+		}
+
+		.code-symbol:nth-child(1) {
+			top: 20px;
+			right: 20px;
+			animation-delay: 0s;
+		}
+
+		.code-symbol:nth-child(2) {
+			top: 60px;
+			left: 10px;
+			animation-delay: 1s;
+		}
+
+		.code-symbol:nth-child(3) {
+			bottom: 40px;
+			right: 10px;
+			animation-delay: 2s;
+		}
+
+		/* Animations */
+		@keyframes float {
+			0%, 100% {
+				transform: translateY(0px);
+			}
+			50% {
+				transform: translateY(-10px);
+			}
+		}
+
+		@keyframes typing {
+			0%, 100% {
+				transform: rotate(-20deg) translateY(0px);
+			}
+			50% {
+				transform: rotate(-20deg) translateY(-3px);
+			}
+		}
+
+		.arm.right {
+			animation-name: typingRight;
+		}
+
+		@keyframes typingRight {
+			0%, 100% {
+				transform: rotate(20deg) translateY(0px);
+			}
+			50% {
+				transform: rotate(20deg) translateY(-3px);
+			}
+		}
+
+		@keyframes codeGlow {
+			0%, 100% {
+				opacity: 0.7;
+			}
+			50% {
+				opacity: 1;
+				box-shadow: 0 0 5px var(--color-primary);
+			}
+		}
+
+		/* Hover effect */
+		.bitmoji-avatar:hover {
+			transform: scale(1.05);
+			transition: transform 0.3s ease;
+		}
+
+		.bitmoji-avatar:hover .code-symbol {
+			animation-duration: 2s;
+		}
+
+		.bitmoji-avatar:hover .arm {
+			animation-duration: 1s;
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.animate-fade-in {
+			animation: fadeIn 0.6s ease-out forwards;
+		}
+
+		/* Enhanced hover effects */
+		.card:hover {
+			border-color: var(--color-primary);
+		}
+
+		.btn:active {
+			transform: translateY(0) scale(0.98);
+		}
+
+		/* Responsive adjustments */
+		@media (max-width: 768px) {
+			.text-4xl {
+				font-size: 2rem;
+				line-height: 2.25rem;
+			}
+			
+			.text-xl {
+				font-size: 1.125rem;
+				line-height: 1.5rem;
+			}
+
+			.theme-toggle {
+				top: 0.5rem;
+				right: 0.5rem;
+				width: 40px;
+				height: 40px;
+			}
+		}
+	</style>
+</Layout>
